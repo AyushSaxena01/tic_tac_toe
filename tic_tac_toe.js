@@ -54,10 +54,11 @@ const ticTacToe = (xName, oName)=>{
         });
 
         // check for draw
-        let boardFilled = false;
+        let boardFilled = true;
         for (i=1 ; i<9 ; i++) {
-            if (board[i] !== ""){
-                boardFilled=true;
+            if (board[i] == ""){
+                boardFilled = false;
+                break;
             }
         }
         
@@ -71,7 +72,7 @@ const ticTacToe = (xName, oName)=>{
     return (player, move) => {
         // Validate right player: return <error> if not
          if (player !== currentPlayer){
-            return [false, `Not your turn, its $(currentPlayer)'s turn.`]                                  
+            return [false, `Not your turn, its ${currentPlayer}'s turn.`]                                  
          }
         // Validate right move: return <error> if not
         if (!isValidMove(move)){
@@ -85,7 +86,7 @@ const ticTacToe = (xName, oName)=>{
         //   1. Update the board
         //   2. Update the game status 
         //   3. Change the current player
-        return [true];
+        return [true, board];
         };
   
 };
