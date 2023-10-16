@@ -15,12 +15,14 @@ Tic Tac Toe
 7. Displays the board and status on each turn
 8. Warning message on wrong move or invalid player.
 9. tic_tac_toe.js Contains the game engine (logic).
-10. tic_tac_toe_play.js is the orchestration layer.
 
 # How to play:
 
-1. Go to tic_tac_toe_play.js
-2. Call the function - myTurn(player,move). Example: myTurn("X",1);
+1. Go to root folder and run the command 'node tic_tac_toe_play.js'
+2. Enter players names. 'x' is by default first turn so first players is assigned with x.
+3. Start entering your moves, make sure you enter chosen Letter and the position on the grid you want to place it.
+   eg: x,1  o,6  x,4    
+
                              
 
 
