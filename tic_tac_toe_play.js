@@ -32,7 +32,7 @@ const printBoard = (board) => {
 // This function proceeds the game on the basis of status.
 const start = () => {
 
-  rl.question("Enter your move? :",(input)=>{
+  rl.question("Enter your move:",(input)=>{
     
   let [ player, move ] = input.split(",");
 

@@ -57,7 +57,7 @@ const ticTacToe = (xName, oName) => {
         board[i2] === board[i3] &&
         board[i3] === currentPlayer
       ) {
-        return `Win-${currentPlayer}: ${players[currentPlayer]}`;
+        return `${players[currentPlayer]}-wins: (${currentPlayer})`;
       }
     }
 
