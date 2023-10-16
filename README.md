@@ -5,8 +5,8 @@ Tic Tac Toe
 1. Two players (X,Y)
 2. A Board (3x3)
 3. 'X' plays first by default 
-4. Validates the players (Whos turn is it currently)
-5. Validates the move (The chosen spot is not already filled /the spot is in the 3x3 grid and not outside) 
+4. Validates the player's turn
+5. Validates the move  
 6. Game status :
             1. X-wins
             2. Y-wins
@@ -18,15 +18,12 @@ Tic Tac Toe
 
 # How to play:
 
-1. Go to root folder and run the command 'node tic_tac_toe_play.js'
-2. Enter players names. 'x' is by default first turn so first players is assigned with x.
-3. Start entering your moves, make sure you enter chosen Letter and the position on the grid you want to place it.
-   eg: x,1  o,6  x,4    
+1. Run tic_tac_toe_play.js file.
+2. Enter players' names. 'x' has the first turn by default, first player name is assigned with x.
+3. Start entering your moves, make sure you enter X/O and the position on the grid.
+   eg: X,1  O,6  X,4    
 
-                             
-
-
-# Thought process. 
+# Design and domain requirements. 
 
 1. We start the game.
 2. There are 2 players X & O. [rule]
